@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Noura Wafik | Creative Professional</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#0EA5E9',secondary:''},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+font-family: 'Inter', sans-serif;
+scroll-behavior: smooth;
+}
+.typing-effect::after {
+content: "|";
+animation: blink 1s step-end infinite;
+}
+@keyframes blink {
+from, to { opacity: 1; }
+50% { opacity: 0; }
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+.masonry-grid {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+grid-auto-rows: 10px;
+grid-gap: 1.5rem;
+}
+.dark {
+background-color: #121212;
+color: #f3f4f6;
+}
+.dark .card {
+background-color: #1f2937;
+}
+.dark .nav-link {
+color: #f3f4f6;
+}
+.dark .nav-link:hover {
+color: #0EA5E9;
+}
+.project-card {
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+.service-card {
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.service-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+.custom-checkbox {
+appearance: none;
+width: 1.25rem;
+height: 1.25rem;
+border: 2px solid #d1d5db;
+border-radius: 4px;
+background-color: white;
+cursor: pointer;
+position: relative;
+}
+.custom-checkbox:checked {
+background-color: #0EA5E9;
+border-color: #0EA5E9;
+}
+.custom-checkbox:checked::after {
+content: "";
+position: absolute;
+left: 6px;
+top: 2px;
+width: 5px;
+height: 10px;
+border: solid white;
+border-width: 0 2px 2px 0;
+transform: rotate(45deg);
+}
+.dark .custom-checkbox {
+background-color: #374151;
+border-color: #6b7280;
+}
+.dark .custom-checkbox:checked {
+background-color: #0EA5E9;
+border-color: #0EA5E9;
+}
+.testimonial-slider {
+scroll-snap-type: x mandatory;
+scroll-behavior: smooth;
+}
+.testimonial-slide {
+scroll-snap-align: start;
+}
+</style>
+</head>
+<body class="bg-white text-gray-800 transition-colors duration-300">
+<!-- Navigation -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-white bg-opacity-90 backdrop-blur-md transition-colors duration-300 shadow-sm">
+<div class="container mx-auto px-6 py-4">
+<div class="flex items-center justify-between">
+<a href="#" class="text-2xl font-['Pacifico'] text-primary">Noura Wafik</a>
+<nav class="hidden md:flex items-center space-x-8">
+<a href="#home" class="nav-link text-gray-700 hover:text-primary transition-colors">Home</a>
+<a href="#projects" class="nav-link text-gray-700 hover:text-primary transition-colors">Projects</a>
+<a href="#services" class="nav-link text-gray-700 hover:text-primary transition-colors">Services</a>
+<a href="#blog" class="nav-link text-gray-700 hover:text-primary transition-colors">Blog</a>
+<a href="#contact" class="nav-link text-gray-700 hover:text-primary transition-colors">Contact</a>
+</nav>
+<div class="flex items-center space-x-4">
+<button id="theme-toggle" class="w-10 h-10 flex items-center justify-center text-gray-700 hover:text-primary transition-colors">
+<i class="ri-sun-line ri-lg"></i>
+</button>
+<a href="#contact" class="hidden md:block bg-primary text-white px-6 py-2 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">Let's Talk</a>
+<button id="mobile-menu-button" class="md:hidden w-10 h-10 flex items-center justify-center text-gray-700 hover:text-primary transition-colors">
+<i class="ri-menu-line ri-lg"></i>
+</button>
+</div>
+</div>
+</div>
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg absolute w-full transition-all duration-300">
+<div class="container mx-auto px-6 py-4 flex flex-col space-y-4">
+<a href="#home" class="nav-link text-gray-700 hover:text-primary transition-colors py-2">Home</a>
+<a href="#projects" class="nav-link text-gray-700 hover:text-primary transition-colors py-2">Projects</a>
+<a href="#services" class="nav-link text-gray-700 hover:text-primary transition-colors py-2">Services</a>
+<a href="#blog" class="nav-link text-gray-700 hover:text-primary transition-colors py-2">Blog</a>
+<a href="#contact" class="nav-link text-gray-700 hover:text-primary transition-colors py-2">Contact</a>
+<a href="#contact" class="bg-primary text-white px-6 py-2 !rounded-button hover:bg-primary/90 transition-colors text-center whitespace-nowrap">Let's Talk</a>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section id="home" class="relative pt-24 pb-16 md:pt-32 md:pb-24" style="background-image: url('https://readdy.ai/api/search-image?query=abstract%20geometric%20background%20with%20soft%20gradients%20in%20light%20blue%20and%20white%2C%20minimalist%20professional%20design%2C%20clean%20modern%20aesthetic%2C%20subtle%20pattern%2C%20high-quality%20digital%20art&width=1920&height=1080&seq=1&orientation=landscape.png'); background-size: cover; background-position: center;">
+<div class="absolute inset-0 bg-white/80 backdrop-blur-sm"></div>
+<div class="container mx-auto px-6 relative">
+<div class="flex flex-col md:flex-row items-center gap-12">
+<div class="w-full md:w-1/2">
+<h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+Creating Digital <span class="text-primary">Experiences</span> That Matter
+</h1>
+<div class="h-8 mb-6">
+<p class="typing-effect text-xl md:text-2xl text-gray-600 font-medium">I'm a <span id="typing-text" class="text-primary">UI/UX Designer</span></p>
+</div>
+<p class="text-lg text-gray-700 mb-8 max-w-xl">
+Multidisciplinary creative professional specializing in UI/UX design, branding, marketing, and website creation. Turning complex problems into elegant solutions.
+</p>
+<div class="flex flex-wrap gap-4">
+<a href="#projects" class="bg-primary text-white px-8 py-3 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">View My Work</a>
+<a href="#contact" class="bg-white text-gray-800 border border-gray-300 px-8 py-3 !rounded-button hover:bg-gray-50 transition-colors whitespace-nowrap">Get in Touch</a>
+</div>
+</div>
+<div class="w-full md:w-1/2 flex justify-center">
+</div>
+</div>
+</div>
+</section>
+<!-- Stats Section -->
+<section class="py-16 bg-gray-50">
+<div class="container mx-auto px-6">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+<div class="text-center">
+<p class="text-4xl font-bold text-primary mb-2">7+</p>
+<p class="text-gray-600">Years Experience</p>
+</div>
+<div class="text-center">
+<p class="text-4xl font-bold text-primary mb-2">120+</p>
+<p class="text-gray-600">Projects Completed</p>
+</div>
+<div class="text-center">
+<p class="text-4xl font-bold text-primary mb-2">85+</p>
+<p class="text-gray-600">Happy Clients</p>
+</div>
+<div class="text-center">
+<p class="text-4xl font-bold text-primary mb-2">15+</p>
+<p class="text-gray-600">Industry Awards</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Projects Section -->
+<section id="projects" class="py-20">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold mb-4">Selected Projects</h2>
+<p class="text-gray-600 max-w-2xl mx-auto">Explore my portfolio of work across UI/UX design, branding, and digital marketing. Each project represents a unique challenge solved with creativity and strategic thinking.</p>
+</div>
+<div class="flex justify-center mb-10">
+<div class="inline-flex p-1 bg-gray-100 rounded-full">
+<button class="filter-btn active px-6 py-2 rounded-full bg-primary text-white whitespace-nowrap" data-filter="all">All Projects</button>
+<button class="filter-btn px-6 py-2 rounded-full text-gray-700 hover:bg-gray-200 whitespace-nowrap" data-filter="ui-ux">UI/UX Design</button>
+<button class="filter-btn px-6 py-2 rounded-full text-gray-700 hover:bg-gray-200 whitespace-nowrap" data-filter="branding">Branding</button>
+<button class="filter-btn px-6 py-2 rounded-full text-gray-700 hover:bg-gray-200 whitespace-nowrap" data-filter="marketing">Marketing</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Project 1 -->
+<div class="project-card rounded-lg overflow-hidden shadow-md bg-white" data-category="ui-ux">
+<div class="relative h-64 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=modern%20mobile%20app%20interface%20design%20for%20fitness%20tracking%2C%20clean%20UI%20with%20blue%20accent%20colors%2C%20showing%20dashboard%20with%20statistics%20and%20workout%20plans%2C%20professional%20UI%2FUX%20design%20showcase%20on%20smartphone%20mockup&width=600&height=400&seq=3&orientation=landscape" alt="Fitness App Redesign" class="w-full h-full object-cover object-top transition-transform duration-500 hover:scale-105">
+<div class="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-sm">UI/UX Design</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold mb-2">FitTrack App Redesign</h3>
+<p class="text-gray-600 mb-4">Complete redesign of a fitness tracking application focusing on user experience and engagement metrics.</p>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Figma</span>
+<span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Prototyping</span>
+<span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">User Testing</span>
+</div>
+<a href="#" class="text-primary font-medium hover:underline flex items-center">
+View Case Study
+<i class="ri-arrow-right-line ri-lg ml-1"></i>
+</a>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="project-card rounded-lg overflow-hidden shadow-md bg-white" data-category="branding">
+<div class="relative h-64 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=modern%20brand%20identity%20design%20for%20an%20eco-friendly%20coffee%20company%2C%20showing%20logo%2C%20packaging%2C%20and%20brand%20elements%20in%20earthy%20tones%20with%20blue%20accents%2C%20professional%20branding%20presentation%20on%20white%20background&width=600&height=400&seq=4&orientation=landscape" alt="Coffee Brand Identity" class="w-full h-full object-cover object-top transition-transform duration-500 hover:scale-105">
+<div class="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-sm">Branding</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold mb-2">Earthly Brews Rebrand</h3>
+<p class="text-gray-600 mb-4">Complete brand identity for an eco-conscious coffee company, including logo, packaging, and guidelines.</p>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Adobe Illustrator</span>
+<span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Brand Strategy</span>
+<span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Packaging</span>
+</div>
+<a href="#" class="text-primary font-medium hover:underline flex items-center">
+View Case Study
+<i class="ri-arrow-right-line ri-lg ml-1"></i>
+</a>
+</div>
+</div>
+<!-- Project 3 -->
+<div class="project-card rounded-lg overflow-hidden shadow-md bg-white" data-category="marketing">
+<div class="relative h-64 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=digital%20marketing%20campaign%20visualization%20for%20a%20tech%20startup%2C%20showing%20social%20media%20posts%2C%20analytics%20dashboard%2C%20and%20campaign%20results%20with%20blue%20color%20scheme%2C%20professional%20marketing%20presentation&width=600&height=400&seq=5&orientation=landscape" alt="Marketing Campaign" class="w-full h-full object-cover object-top transition-transform duration-500 hover:scale-105">
+<div class="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-sm">Marketing</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold mb-2">NovaTech Launch Campaign</h3>
+<p class="text-gray-600 mb-4">Digital marketing strategy for a tech startup's product launch, resulting in 200% ROI and 50K+ leads.</p>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Campaign Strategy</span>
+<span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Social Media</span>
+<span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Analytics</span>
+</div>
+<a href="#" class="text-primary font-medium hover:underline flex items-center">
+View Case Study
+<i class="ri-arrow-right-line ri-lg ml-1"></i>
+</a>
+</div>
+</div>
+<!-- Project 4 -->
+<div class="project-card rounded-lg overflow-hidden shadow-md bg-white" data-category="ui-ux">
+<div class="relative h-64 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=e-commerce%20website%20design%20for%20fashion%20brand%2C%20responsive%20layout%20showing%20desktop%20and%20mobile%20views%2C%20clean%20modern%20interface%20with%20product%20galleries%20and%20checkout%20flow%2C%20professional%20UI%2FUX%20design&width=600&height=400&seq=6&orientation=landscape" alt="E-commerce Website" class="w-full h-full object-cover object-top transition-transform duration-500 hover:scale-105">
+<div class="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-sm">UI/UX Design</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold mb-2">Modish E-commerce Platform</h3>
+<p class="text-gray-600 mb-4">End-to-end design for a fashion e-commerce platform, optimizing for conversions and user engagement.</p>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Shopify</span>
+<span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Responsive Design</span>
+<span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">CRO</span>
+</div>
+<a href="#" class="text-primary font-medium hover:underline flex items-center">
+View Case Study
+<i class="ri-arrow-right-line ri-lg ml-1"></i>
+</a>
+</div>
+</div>
+<!-- Project 5 -->
+<div class="project-card rounded-lg overflow-hidden shadow-md bg-white" data-category="branding">
+<div class="relative h-64 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=restaurant%20branding%20and%20menu%20design%20for%20upscale%20eatery%2C%20showing%20logo%2C%20menu%20layouts%2C%20business%20cards%20and%20signage%20with%20elegant%20typography%20and%20blue%20accent%20colors%2C%20professional%20branding%20presentation&width=600&height=400&seq=7&orientation=landscape" alt="Restaurant Branding" class="w-full h-full object-cover object-top transition-transform duration-500 hover:scale-105">
+<div class="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-sm">Branding</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold mb-2">Sapore Restaurant Identity</h3>
+<p class="text-gray-600 mb-4">Complete brand identity for an upscale Italian restaurant, including logo, menus, and interior elements.</p>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Brand Identity</span>
+<span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Print Design</span>
+<span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Typography</span>
+</div>
+<a href="#" class="text-primary font-medium hover:underline flex items-center">
+View Case Study
+<i class="ri-arrow-right-line ri-lg ml-1"></i>
+</a>
+</div>
+</div>
+<!-- Project 6 -->
+<div class="project-card rounded-lg overflow-hidden shadow-md bg-white" data-category="marketing">
+<div class="relative h-64 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=email%20marketing%20campaign%20design%20for%20wellness%20brand%2C%20showing%20newsletter%20templates%2C%20automation%20flows%2C%20and%20performance%20metrics%20with%20blue%20and%20white%20color%20scheme%2C%20professional%20marketing%20presentation&width=600&height=400&seq=8&orientation=landscape" alt="Email Marketing" class="w-full h-full object-cover object-top transition-transform duration-500 hover:scale-105">
+<div class="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-sm">Marketing</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold mb-2">Serene Wellness Email Strategy</h3>
+<p class="text-gray-600 mb-4">Email marketing automation and design for a wellness brand, increasing open rates by 45% and conversions by 30%.</p>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Email Design</span>
+<span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Automation</span>
+<span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">A/B Testing</span>
+</div>
+<a href="#" class="text-primary font-medium hover:underline flex items-center">
+View Case Study
+<i class="ri-arrow-right-line ri-lg ml-1"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="text-center mt-12">
+<a href="#" class="inline-block bg-white text-primary border border-primary px-8 py-3 !rounded-button hover:bg-primary/5 transition-colors whitespace-nowrap">View All Projects</a>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section id="services" class="py-20 bg-gray-50">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold mb-4">Services I Offer</h2>
+<p class="text-gray-600 max-w-2xl mx-auto">Comprehensive creative solutions tailored to your business needs. Each service is designed to help you stand out in today's competitive digital landscape.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Service 1 -->
+<div class="service-card bg-white rounded-lg p-8 shadow-md">
+<div class="w-16 h-16 flex items-center justify-center bg-primary/10 text-primary rounded-lg mb-6">
+<i class="ri-layout-4-line ri-2x"></i>
+</div>
+<h3 class="text-xl font-bold mb-3">UI/UX Design</h3>
+<p class="text-gray-600 mb-6">Creating intuitive, engaging user experiences that delight your customers and achieve your business goals.</p>
+<ul class="space-y-2 mb-6">
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700">User Research & Personas</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700">Wireframing & Prototyping</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700">Usability Testing</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700">Responsive Web Design</span>
+</li>
+</ul>
+<a href="https://wa.me/201069877310" target="_blank" class="text-primary font-medium hover:underline flex items-center">
+WhatsApp
+<i class="ri-whatsapp-line ri-lg ml-1"></i>
+</a>
+</div>
+<!-- Service 2 -->
+<div class="service-card bg-white rounded-lg p-8 shadow-md">
+<div class="w-16 h-16 flex items-center justify-center bg-primary/10 text-primary rounded-lg mb-6">
+<i class="ri-palette-line ri-2x"></i>
+</div>
+<h3 class="text-xl font-bold mb-3">Brand Identity</h3>
+<p class="text-gray-600 mb-6">Developing distinctive brand identities that communicate your values and resonate with your target audience.</p>
+<ul class="space-y-2 mb-6">
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700">Logo Design & Brand Marks</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700">Brand Guidelines & Systems</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700">Visual Identity Design</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700">Brand Messaging & Positioning</span>
+</li>
+</ul>
+<a href="https://wa.me/201069877310" target="_blank" class="text-primary font-medium hover:underline flex items-center">
+WhatsApp
+<i class="ri-whatsapp-line ri-lg ml-1"></i>
+</a>
+</div>
+<!-- Service 3 -->
+<div class="service-card bg-white rounded-lg p-8 shadow-md">
+<div class="w-16 h-16 flex items-center justify-center bg-primary/10 text-primary rounded-lg mb-6">
+<i class="ri-line-chart-line ri-2x"></i>
+</div>
+<h3 class="text-xl font-bold mb-3">Digital Marketing</h3>
+<p class="text-gray-600 mb-6">Strategic digital marketing solutions that drive traffic, generate leads, and increase conversions for your business.</p>
+<ul class="space-y-2 mb-6">
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700">Content Strategy & Creation</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700">Social Media Marketing</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700">Email Marketing Campaigns</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700">Analytics & Performance Tracking</span>
+</li>
+</ul>
+<a href="https://wa.me/201069877310" target="_blank" class="text-primary font-medium hover:underline flex items-center">
+WhatsApp
+<i class="ri-whatsapp-line ri-lg ml-1"></i>
+</a>
+</div>
+<!-- Service 4 -->
+<div class="service-card bg-white rounded-lg p-8 shadow-md">
+<div class="w-16 h-16 flex items-center justify-center bg-primary/10 text-primary rounded-lg mb-6">
+<i class="ri-code-s-slash-line ri-2x"></i>
+</div>
+<h3 class="text-xl font-bold mb-3">Website Development</h3>
+<p class="text-gray-600 mb-6">Building responsive, high-performance websites that provide exceptional user experiences across all devices.</p>
+<ul class="space-y-2 mb-6">
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700">Custom Website Design</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700">E-commerce Solutions</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700">CMS Implementation</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700">Performance Optimization</span>
+</li>
+</ul>
+<a href="https://wa.me/201069877310" target="_blank" class="text-primary font-medium hover:underline flex items-center">
+WhatsApp
+<i class="ri-whatsapp-line ri-lg ml-1"></i>
+</a>
+</div>
+<!-- Service 5 -->
+<div class="service-card bg-white rounded-lg p-8 shadow-md">
+<div class="w-16 h-16 flex items-center justify-center bg-primary/10 text-primary rounded-lg mb-6">
+<i class="ri-smartphone-line ri-2x"></i>
+</div>
+<h3 class="text-xl font-bold mb-3">Mobile App Design</h3>
+<p class="text-gray-600 mb-6">Designing intuitive, engaging mobile applications that provide seamless user experiences across platforms.</p>
+<ul class="space-y-2 mb-6">
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700">iOS & Android Design</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700">App UI/UX Design</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700">Interactive Prototypes</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700">App Store Optimization</span>
+</li>
+</ul>
+<a href="https://wa.me/201069877310" target="_blank" class="text-primary font-medium hover:underline flex items-center">
+WhatsApp
+<i class="ri-whatsapp-line ri-lg ml-1"></i>
+</a>
+</div>
+<!-- Service 6 -->
+<div class="service-card bg-white rounded-lg p-8 shadow-md">
+<div class="w-16 h-16 flex items-center justify-center bg-primary/10 text-primary rounded-lg mb-6">
+<i class="ri-lightbulb-line ri-2x"></i>
+</div>
+<h3 class="text-xl font-bold mb-3">Strategy Consulting</h3>
+<p class="text-gray-600 mb-6">Strategic guidance to help businesses navigate digital transformation and achieve their growth objectives.</p>
+<ul class="space-y-2 mb-6">
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700">Digital Transformation</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700">Product Strategy</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700">Market Research</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700">Growth Hacking</span>
+</li>
+</ul>
+<a href="https://wa.me/201069877310" target="_blank" class="text-primary font-medium hover:underline flex items-center">
+WhatsApp
+<i class="ri-whatsapp-line ri-lg ml-1"></i>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Process Section -->
+<section class="py-20">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold mb-4">My Creative Process</h2>
+<p class="text-gray-600 max-w-2xl mx-auto">A structured approach to solving design challenges and delivering exceptional results. Each step is crucial to creating solutions that work.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Step 1 -->
+<div class="text-center">
+<div class="w-20 h-20 flex items-center justify-center bg-primary text-white text-2xl font-bold rounded-full mx-auto mb-6">01</div>
+<h3 class="text-xl font-bold mb-3">Discovery</h3>
+<p class="text-gray-600">Understanding your business, goals, target audience, and project requirements through in-depth research.</p>
+</div>
+<!-- Step 2 -->
+<div class="text-center">
+<div class="w-20 h-20 flex items-center justify-center bg-primary text-white text-2xl font-bold rounded-full mx-auto mb-6">02</div>
+<h3 class="text-xl font-bold mb-3">Strategy</h3>
+<p class="text-gray-600">Developing a comprehensive plan that aligns with your business objectives and addresses user needs.</p>
+</div>
+<!-- Step 3 -->
+<div class="text-center">
+<div class="w-20 h-20 flex items-center justify-center bg-primary text-white text-2xl font-bold rounded-full mx-auto mb-6">03</div>
+<h3 class="text-xl font-bold mb-3">Design</h3>
+<p class="text-gray-600">Creating visually stunning and functional designs that engage users and reflect your brand identity.</p>
+</div>
+<!-- Step 4 -->
+<div class="text-center">
+<div class="w-20 h-20 flex items-center justify-center bg-primary text-white text-2xl font-bold rounded-full mx-auto mb-6">04</div>
+<h3 class="text-xl font-bold mb-3">Delivery</h3>
+<p class="text-gray-600">Implementing the final solution, providing support, and measuring success against defined metrics.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Blog Section -->
+<section id="blog" class="py-20 bg-gray-50">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold mb-4">Insights & Articles</h2>
+<p class="text-gray-600 max-w-2xl mx-auto">Thoughts, strategies, and insights on design, branding, and digital marketing to help you elevate your business.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Article 1 -->
+<div class="bg-white rounded-lg overflow-hidden shadow-md">
+<div class="h-48 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=modern%20UI%20design%20trends%20illustration%20with%20blue%20accent%20colors%2C%20showing%20minimalist%20interface%20elements%2C%20professional%20design%20concept%20visualization&width=600&height=300&seq=9&orientation=landscape.png" alt="UI Design Trends" class="w-full h-full object-cover object-top transition-transform duration-500 hover:scale-105">
+</div>
+<div class="p-6">
+<div class="flex items-center justify-between mb-3">
+<span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">UI/UX Design</span>
+<span class="text-gray-500 text-sm flex items-center">
+<i class="ri-time-line mr-1"></i>
+5 min read
+</span>
+</div>
+<h3 class="text-xl font-bold mb-3">7 UI Design Trends That Will Dominate 2025</h3>
+<p class="text-gray-600 mb-4">Explore the cutting-edge UI design trends that are shaping the digital landscape and how to implement them in your projects.</p>
+<div class="flex items-center justify-between">
+<a href="#" class="text-primary font-medium hover:underline">Read Article</a>
+<span class="text-gray-500 text-sm">April 8, 2025</span>
+</div>
+</div>
+</div>
+<!-- Article 2 -->
+<div class="bg-white rounded-lg overflow-hidden shadow-md">
+<div class="h-48 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=brand%20strategy%20illustration%20showing%20brand%20elements%20and%20identity%20components%2C%20professional%20business%20concept%20with%20blue%20accent%20colors&width=600&height=300&seq=10&orientation=landscape.png" alt="Brand Strategy" class="w-full h-full object-cover object-top transition-transform duration-500 hover:scale-105">
+</div>
+<div class="p-6">
+<div class="flex items-center justify-between mb-3">
+<span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">Branding</span>
+<span class="text-gray-500 text-sm flex items-center">
+<i class="ri-time-line mr-1"></i>
+7 min read
+</span>
+</div>
+<h3 class="text-xl font-bold mb-3">Building a Brand That Resonates: Strategy Guide</h3>
+<p class="text-gray-600 mb-4">Learn how to create a brand strategy that connects with your audience and differentiates your business in a crowded market.</p>
+<div class="flex items-center justify-between">
+<a href="#" class="text-primary font-medium hover:underline">Read Article</a>
+<span class="text-gray-500 text-sm">March 22, 2025</span>
+</div>
+</div>
+</div>
+<!-- Article 3 -->
+<div class="bg-white rounded-lg overflow-hidden shadow-md">
+<div class="h-48 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=digital%20marketing%20analytics%20dashboard%20visualization%2C%20showing%20performance%20metrics%20and%20campaign%20results%20with%20graphs%20and%20charts%2C%20professional%20business%20concept%20with%20blue%20accent%20colors&width=600&height=300&seq=11&orientation=landscape.png" alt="Marketing ROI" class="w-full h-full object-cover object-top transition-transform duration-500 hover:scale-105">
+</div>
+<div class="p-6">
+<div class="flex items-center justify-between mb-3">
+<span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">Marketing</span>
+<span class="text-gray-500 text-sm flex items-center">
+<i class="ri-time-line mr-1"></i>
+6 min read
+</span>
+</div>
+<h3 class="text-xl font-bold mb-3">Measuring Marketing ROI: Beyond the Numbers</h3>
+<p class="text-gray-600 mb-4">Discover how to effectively measure the true impact of your marketing efforts and optimize your strategy for better results.</p>
+<div class="flex items-center justify-between">
+<a href="#" class="text-primary font-medium hover:underline">Read Article</a>
+<span class="text-gray-500 text-sm">March 5, 2025</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-12 bg-white rounded-lg p-8 shadow-md">
+<div class="flex flex-col md:flex-row items-center justify-between">
+<div class="mb-6 md:mb-0 md:mr-8">
+<h3 class="text-xl font-bold mb-2">Subscribe to My Newsletter</h3>
+<p class="text-gray-600">Get the latest insights on design, branding, and marketing delivered to your inbox.</p>
+</div>
+<div class="w-full md:w-auto">
+<form class="flex flex-col sm:flex-row gap-3">
+<input type="email" placeholder="Your email address" class="px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary w-full sm:w-64" required>
+<button type="submit" class="bg-primary text-white px-6 py-3 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">Subscribe</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials Section -->
+<section class="py-20">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold mb-4">Client Testimonials</h2>
+<p class="text-gray-600 max-w-2xl mx-auto">Don't just take my word for it. Here's what my clients have to say about working with me.</p>
+</div>
+<div class="relative">
+<div class="testimonial-slider flex overflow-x-auto pb-8 -mx-4 px-4 hide-scrollbar">
+<!-- Testimonial 1 -->
+<div class="testimonial-slide flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-4">
+<div class="bg-white rounded-lg p-8 shadow-md h-full">
+<div class="flex items-center text-primary mb-4">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+<p class="text-gray-700 mb-6 italic">"Noura completely transformed our brand identity and website. Her strategic approach to design not only made our company look more professional but also significantly improved our conversion rates. A true professional who delivers results."</p>
+<div class="flex items-center">
+<img src="https://readdy.ai/api/search-image?query=professional%20headshot%20of%20business%20woman%20in%2040s%2C%20corporate%20attire%2C%20neutral%20background%2C%20high%20quality%20portrait&width=100&height=100&seq=12&orientation=squarish.png" alt="Sarah Johnson" class="w-12 h-12 rounded-full object-cover mr-4 object-top">
+<div>
+<h4 class="font-bold">Sarah Johnson</h4>
+<p class="text-gray-600 text-sm">CEO, TechVision Inc.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="testimonial-slide flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-4">
+<div class="bg-white rounded-lg p-8 shadow-md h-full">
+<div class="flex items-center text-primary mb-4">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+<p class="text-gray-700 mb-6 italic">"Working with Noura was a game-changer for our startup. Her UI/UX expertise helped us create an app that our users love. The attention to detail and understanding of user behavior was impressive. Highly recommend!"</p>
+<div class="flex items-center">
+<img src="https://readdy.ai/api/search-image?query=professional%20headshot%20of%20business%20man%20in%2030s%2C%20casual%20smart%20attire%2C%20neutral%20background%2C%20high%20quality%20portrait&width=100&height=100&seq=13&orientation=squarish.png" alt="Michael Chen" class="w-12 h-12 rounded-full object-cover mr-4 object-top">
+<div>
+<h4 class="font-bold">Michael Chen</h4>
+<p class="text-gray-600 text-sm">Founder, AppLaunch</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="testimonial-slide flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-4">
+<div class="bg-white rounded-lg p-8 shadow-md h-full">
+<div class="flex items-center text-primary mb-4">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+<p class="text-gray-700 mb-6 italic">"Noura's marketing strategy completely revitalized our brand. Her comprehensive approach, from social media to email campaigns, resulted in a 200% increase in leads within just three months. She's now an essential part of our ongoing marketing efforts."</p>
+<div class="flex items-center">
+<img src="https://readdy.ai/api/search-image?query=professional%20headshot%20of%20business%20woman%20in%2030s%2C%20stylish%20professional%20attire%2C%20neutral%20background%2C%20high%20quality%20portrait&width=100&height=100&seq=14&orientation=squarish.png" alt="Emily Rodriguez" class="w-12 h-12 rounded-full object-cover mr-4 object-top">
+<div>
+<h4 class="font-bold">Emily Rodriguez</h4>
+<p class="text-gray-600 text-sm">Marketing Director, Elevate Retail</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Testimonial 4 -->
+<div class="testimonial-slide flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-4">
+<div class="bg-white rounded-lg p-8 shadow-md h-full">
+<div class="flex items-center text-primary mb-4">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+<p class="text-gray-700 mb-6 italic">"The rebrand Noura created for our restaurant was nothing short of exceptional. She captured the essence of our culinary vision and translated it into a cohesive identity that resonates with our customers. Our bookings increased by 45% after the rebrand."</p>
+<div class="flex items-center">
+<img src="https://readdy.ai/api/search-image?query=professional%20headshot%20of%20chef%20in%2040s%2C%20chef%20jacket%2C%20neutral%20background%2C%20high%20quality%20portrait&width=100&height=100&seq=15&orientation=squarish.png" alt="Daniel Moretti" class="w-12 h-12 rounded-full object-cover mr-4 object-top">
+<div>
+<h4 class="font-bold">Daniel Moretti</h4>
+<p class="text-gray-600 text-sm">Owner, Sapore Restaurant</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="flex justify-center mt-8">
+<div class="flex space-x-2">
+<button class="testimonial-dot w-3 h-3 rounded-full bg-primary"></button>
+<button class="testimonial-dot w-3 h-3 rounded-full bg-gray-300"></button>
+<button class="testimonial-dot w-3 h-3 rounded-full bg-gray-300"></button>
+<button class="testimonial-dot w-3 h-3 rounded-full bg-gray-300"></button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section id="contact" class="py-20 bg-gray-50">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold mb-4">Let's Work Together</h2>
+<p class="text-gray-600 max-w-2xl mx-auto">Have a project in mind? I'd love to hear about it. Get in touch and let's create something amazing together.</p>
+</div>
+<div class="bg-white rounded-lg shadow-md overflow-hidden">
+<div class="grid grid-cols-1 md:grid-cols-2">
+<div class="p-8 md:p-12">
+<h3 class="text-2xl font-bold mb-6">Send Me a Message</h3>
+<form action="https://formspree.io/f/mwplajgw" method="POST">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
+<div>
+<label for="name" class="block text-gray-700 mb-2">Your Name</label>
+<input type="text" id="name" name="name" class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary" required>
+</div>
+<div>
+<label for="email" class="block text-gray-700 mb-2">Your Email</label>
+<input type="email" id="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary" required>
+</div>
+</div>
+<div class="mb-6">
+<label for="subject" class="block text-gray-700 mb-2">Subject</label>
+<input type="text" id="subject" name="subject" class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary" required>
+</div>
+<div class="mb-6">
+<label for="message" class="block text-gray-700 mb-2">Your Message</label>
+<textarea id="message" name="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary" required></textarea>
+</div>
+<div class="mb-6 flex items-start">
+<input type="checkbox" id="consent" name="consent" class="custom-checkbox mr-3 mt-1" required>
+<label for="consent" class="text-gray-600 text-sm">I agree to the processing of my personal data in accordance with the Privacy Policy.</label>
+</div>
+<button type="submit" class="bg-primary text-white px-8 py-3 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">Send Message</button>
+</form>
+</div>
+<div class="bg-primary text-white p-8 md:p-12 flex flex-col justify-between">
+<div>
+<h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+<p class="mb-8">Feel free to reach out to me directly or follow me on social media.</p>
+<div class="space-y-6">
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center bg-white/20 rounded-full mr-4">
+<i class="ri-mail-line text-white"></i>
+</div>
+<div>
+<h4 class="font-bold mb-1">Email</h4>
+<p>noura.wafik.nada@gmail.com</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center bg-white/20 rounded-full mr-4">
+<i class="ri-phone-line text-white"></i>
+</div>
+<div>
+<h4 class="font-bold mb-1">Phone</h4>
+<p>+2 01069877310</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center bg-white/20 rounded-full mr-4">
+<i class="ri-time-line text-white"></i>
+</div>
+<div>
+<h4 class="font-bold mb-1">Working Hours</h4>
+<p>Mon - Fri: 9:00 AM - 6:00 PM PST</p>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-12">
+<h4 class="font-bold mb-4">Connect With Me</h4>
+<div class="flex space-x-4">
+<a href="https://www.linkedin.com/in/nourawafik/" class="w-10 h-10 flex items-center justify-center bg-white/20 rounded-full hover:bg-white/30 transition-colors">
+<i class="ri-linkedin-fill text-white"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-white/20 rounded-full hover:bg-white/30 transition-colors">
+<i class="ri-dribbble-fill text-white"></i>
+</a>
+<a href="https://www.behance.net/nourawafik" class="w-10 h-10 flex items-center justify-center bg-white/20 rounded-full hover:bg-white/30 transition-colors">
+<i class="ri-behance-fill text-white"></i>
+</a>
+<a href="https://wa.me/201069877310" class="w-10 h-10 flex items-center justify-center bg-white/20 rounded-full hover:bg-white/30 transition-colors">
+<i class="ri-whatsapp-fill text-white"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-12">
+<div class="container mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+<div>
+<a href="#" class="text-2xl font-['Pacifico'] text-white mb-4 inline-block">Noura Wafik</a>
+<p class="text-gray-400 mb-6">Multidisciplinary creative professional specializing in UI/UX design, branding, marketing, and website creation.</p>
+<div class="flex space-x-4">
+<a href="https://www.linkedin.com/in/nourawafik/" class="text-gray-400 hover:text-white transition-colors">
+<i class="ri-linkedin-fill ri-lg"></i>
+</a>
+<a href="#" class="text-gray-400 hover:text-white transition-colors">
+<i class="ri-dribbble-fill ri-lg"></i>
+</a>
+<a href="https://www.behance.net/nourawafik" class="text-gray-400 hover:text-white transition-colors">
+<i class="ri-behance-fill ri-lg"></i>
+</a>
+</div>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-4">Quick Links</h4>
+<ul class="space-y-2">
+<li><a href="#home" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+<li><a href="#projects" class="text-gray-400 hover:text-white transition-colors">Projects</a></li>
+<li><a href="#services" class="text-gray-400 hover:text-white transition-colors">Services</a></li>
+<li><a href="#blog" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
+<li><a href="#contact" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-4">Services</h4>
+<ul class="space-y-2">
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">UI/UX Design</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Brand Identity</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Digital Marketing</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Website Development</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Mobile App Design</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-4">Newsletter</h4>
+<p class="text-gray-400 mb-4">Subscribe to my newsletter for the latest insights and updates.</p>
+<form class="flex flex-col sm:flex-row gap-3">
+<input type="email" placeholder="Your email address" class="px-4 py-3 bg-gray-800 border border-gray-700 rounded focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary w-full" required>
+<button type="submit" class="bg-primary text-white px-6 py-3 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">Subscribe</button>
+</form>
+</div>
+</div>
+<div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
+<p class="text-gray-400 mb-4 md:mb-0">© 2025 Noura Wafik. All rights reserved.</p>
+<div class="flex space-x-6">
+<a href="#" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
+<a href="#" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a>
+<a href="#" class="text-gray-400 hover:text-white transition-colors">Cookie Policy</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- Back to Top Button -->
+<button id="back-to-top" class="fixed bottom-6 right-6 w-12 h-12 bg-primary text-white rounded-full shadow-lg flex items-center justify-center opacity-0 invisible transition-all duration-300">
+<i class="ri-arrow-up-line ri-lg"></i>
+</button>
+<script>
+// Mobile Menu Toggle
+const mobileMenuButton = document.getElementById('mobile-menu-button');
+const mobileMenu = document.getElementById('mobile-menu');
+mobileMenuButton.addEventListener('click', () => {
+mobileMenu.classList.toggle('hidden');
+if (mobileMenuButton.querySelector('i').classList.contains('ri-menu-line')) {
+mobileMenuButton.querySelector('i').classList.replace('ri-menu-line', 'ri-close-line');
+} else {
+mobileMenuButton.querySelector('i').classList.replace('ri-close-line', 'ri-menu-line');
+}
+});
+// Close mobile menu when clicking on a link
+const mobileLinks = mobileMenu.querySelectorAll('a');
+mobileLinks.forEach(link => {
+link.addEventListener('click', () => {
+mobileMenu.classList.add('hidden');
+mobileMenuButton.querySelector('i').classList.replace('ri-close-line', 'ri-menu-line');
+});
+});
+// Typing Effect
+const typingText = document.getElementById('typing-text');
+const roles = ['UI/UX Designer', 'Brand Strategist', 'Marketing Expert', 'Web Developer'];
+let roleIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+let typingDelay = 100;
+function typeEffect() {
+const currentRole = roles[roleIndex];
+if (isDeleting) {
+typingText.textContent = currentRole.substring(0, charIndex - 1);
+charIndex--;
+typingDelay = 50;
+} else {
+typingText.textContent = currentRole.substring(0, charIndex + 1);
+charIndex++;
+typingDelay = 150;
+}
+if (!isDeleting && charIndex === currentRole.length) {
+isDeleting = true;
+typingDelay = 1500; // Pause at end of word
+} else if (isDeleting && charIndex === 0) {
+isDeleting = false;
+roleIndex = (roleIndex + 1) % roles.length;
+typingDelay = 500; // Pause before typing next word
+}
+setTimeout(typeEffect, typingDelay);
+}
+// Start the typing effect
+setTimeout(typeEffect, 1000);
+// Project Filtering
+const filterButtons = document.querySelectorAll('.filter-btn');
+const projectCards = document.querySelectorAll('.project-card');
+filterButtons.forEach(button => {
+button.addEventListener('click', () => {
+// Remove active class from all buttons
+filterButtons.forEach(btn => btn.classList.remove('active', 'bg-primary', 'text-white'));
+filterButtons.forEach(btn => btn.classList.add('text-gray-700', 'hover:bg-gray-200'));
+// Add active class to clicked button
+button.classList.add('active', 'bg-primary', 'text-white');
+button.classList.remove('text-gray-700', 'hover:bg-gray-200');
+const filter = button.getAttribute('data-filter');
+projectCards.forEach(card => {
+if (filter === 'all' || card.getAttribute('data-category') === filter) {
+card.style.display = 'block';
+} else {
+card.style.display = 'none';
+}
+});
+});
+});
+// Testimonial Slider
+const testimonialDots = document.querySelectorAll('.testimonial-dot');
+const testimonialSlider = document.querySelector('.testimonial-slider');
+const testimonialSlides = document.querySelectorAll('.testimonial-slide');
+testimonialDots.forEach((dot, index) => {
+dot.addEventListener('click', () => {
+// Update active dot
+testimonialDots.forEach(d => d.classList.remove('bg-primary'));
+testimonialDots.forEach(d => d.classList.add('bg-gray-300'));
+dot.classList.remove('bg-gray-300');
+dot.classList.add('bg-primary');
+// Calculate scroll position
+const slideWidth = testimonialSlides[0].offsetWidth;
+const scrollPosition = index * slideWidth;
+testimonialSlider.scrollTo({
+left: scrollPosition,
+behavior: 'smooth'
+});
+});
+});
+// Theme Toggle
+const themeToggle = document.getElementById('theme-toggle');
+const html = document.documentElement;
+const body = document.body;
+const header = document.querySelector('header');
+themeToggle.addEventListener('click', () => {
+body.classList.toggle('dark');
+header.classList.toggle('bg-gray-900');
+header.classList.toggle('bg-white');
+if (body.classList.contains('dark')) {
+themeToggle.querySelector('i').classList.replace('ri-sun-line', 'ri-moon-line');
+} else {
+themeToggle.querySelector('i').classList.replace('ri-moon-line', 'ri-sun-line');
+}
+});
+// Back to Top Button
+const backToTopButton = document.getElementById('back-to-top');
+window.addEventListener('scroll', () => {
+if (window.pageYOffset > 300) {
+backToTopButton.classList.remove('opacity-0', 'invisible');
+backToTopButton.classList.add('opacity-100', 'visible');
+} else {
+backToTopButton.classList.remove('opacity-100', 'visible');
+backToTopButton.classList.add('opacity-0', 'invisible');
+}
+});
+backToTopButton.addEventListener('click', () => {
+window.scrollTo({
+top: 0,
+behavior: 'smooth'
+});
+});
+// Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+anchor.addEventListener('click', function(e) {
+e.preventDefault();
+const targetId = this.getAttribute('href');
+if (targetId === '#') return;
+const targetElement = document.querySelector(targetId);
+if (targetElement) {
+const headerHeight = document.querySelector('header').offsetHeight;
+const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+window.scrollTo({
+top: targetPosition,
+behavior: 'smooth'
+});
+}
+});
+});
+</script>
+</body>
+</html>
